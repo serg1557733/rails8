@@ -1,0 +1,13 @@
+<%= form_with model: @product do |form| %>
+  <div class="flex space-between">
+
+    <div>
+      <%= form.text_field :name %>
+      <%=form.label :name %>
+    </div>
+
+    <div>
+      <%= form.submit "Submit Product" %>
+    </div>
+  </div>
+<% end %>
