@@ -7,6 +7,18 @@ Rails.application.routes.draw do
   root "products#index"
   resources :products
 
+  # get "/products", to: "products#index"
+  #
+  # get "/products/new", to: "products#new"
+  # post "/products", to: "products#create"
+  #
+  # get "/products/:id", to: "products#show"
+  #
+  # get "/products/:id/edit", to: "products#edit"
+  # patch "/products/:id", to: "products#update"
+  # put "/products/:id", to: "products#update"
+  #
+  # delete "/products/:id", to: "products#destroy"
 
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
