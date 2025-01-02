@@ -34,7 +34,7 @@ class ProductsController < ApplicationController
 
   def destroy
     @product.destroy
-    redirect_to products_path, notice: 'Product was successfully destroyed.'
+    redirect_to products_path, notice: "Product was successfully destroyed."
   end
 
   private
@@ -44,6 +44,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.expect(product: [:name])
+    params.expect(product: [ :name ])
   end
 end
