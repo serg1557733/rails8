@@ -1,9 +1,8 @@
-<h1 class="red">Products</h1>
+<h1 class="red"><%= t ".title" %></h1>
 
 <%= link_to "New product", new_product_path if authenticated? %>
 
 <div id="products">
-
 
   <% @products.each do |product| %>
     <div>
