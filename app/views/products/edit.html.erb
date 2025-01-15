@@ -2,3 +2,4 @@
 
 <%= render "form", product: @product %>
 <%= link_to "Cancel", @product, class: "button" %>
+<%= image_tag @product.featured_image if @product.featured_image.attached? %>
