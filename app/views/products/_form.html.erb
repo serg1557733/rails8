@@ -3,7 +3,7 @@
 
     <div>
       <%= form.text_area :name %>
-      <%=form.label :name%>
+      <%= form.label :name %>
     </div>
 
     <div>
@@ -20,10 +20,10 @@
       <%= form.label :inventory_count, style: "display: block" %>
       <%= form.number_field :inventory_count %>
     </div>
-    
+
     <div>
       <%= form.submit "Submit Product" %>
     </div>
-    
+
   </div>
 <% end %>
