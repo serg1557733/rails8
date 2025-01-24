@@ -6,6 +6,8 @@
   <%= @product.description %>
 <% end %>
 <div>
+  <%= render "inventory", product: @product %>
+
   <%= link_to "Back", products_path %>
 
 
