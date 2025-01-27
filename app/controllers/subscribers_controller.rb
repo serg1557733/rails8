@@ -4,7 +4,7 @@ class SubscribersController < ApplicationController
 
   def create
     @product.subscribers.where(subscriber_params).first_or_create
-    redirect_to @product, notice: 'Subscription was successfully created.'
+    redirect_to @product, notice: "Subscription was successfully created."
   end
 
   private
@@ -14,6 +14,6 @@ class SubscribersController < ApplicationController
   end
 
   def subscriber_params
-    params.expect(subscriber: [ :email])
+    params.expect(subscriber: [ :email ])
   end
 end

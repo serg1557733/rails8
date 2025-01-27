@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # get "up" => "rails/health#show", as: :rails_health_check
   root "products#index"
   resources :products do
-    resources :subscribers, only: [:create]
+    resources :subscribers, only: [ :create ]
   end
 
   # get "/products", to: "products#index"
