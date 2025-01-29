@@ -3,4 +3,4 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 
-console.log("JavaScript.")
+console.log("Javript.")
